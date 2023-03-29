@@ -1,0 +1,145 @@
+$primary-color: #0066FF
+$text-grey-500: #9D9D9D
+$pale-blue: #6FC5FF
+
+.header
+    display: flex
+    justify-content: space-between
+    align-content: center
+    margin: 2rem
+
+nav
+    display: flex
+    align-self: center
+    padding-bottom: 1rem
+
+    a
+        text-decoration: none
+        color: white
+        padding: 0 1.5rem
+        font-size: 1.5rem
+        font-weight: 300
+
+        &.active
+            font-weight: 600
+
+.logo
+    display: flex
+    align-items: center
+    cursor: default
+
+    img
+        height: 8rem
+        padding-right: 1.5rem
+
+    h1
+        font-size: 3rem
+        margin: 0
+
+    p
+        color: $text-grey-500
+        font-weight: 600
+        margin: 0
+
+    .beta-badge
+        color: $pale-blue
+        padding: 0.2rem 0.7rem
+        font-size: 0.8rem
+        border-radius: 7px
+        margin-left: 0.8rem
+        position: relative
+        bottom: 2rem
+        border: 2px solid $pale-blue
+
+.horizontal-graph
+    margin-left: 2rem
+    width: 50vw
+    height: 35vh
+
+.stats
+    width: fit-content
+
+.tab
+    margin: 0.2rem
+    float: right
+    padding: 0.5rem 1rem
+    cursor: pointer
+
+    &--selected
+        background: $primary-color
+        border-radius: 10px
+        animation: 500ms ease-out 0s fadeIn
+
+.user-stats
+    margin: 2rem
+
+    h2
+        font-size: 2.5rem
+        margin: 2rem 0
+
+    &__intro-text
+        margin-left: 2rem
+
+    &__introduction
+        margin-bottom: 3rem
+        display: flex
+        align-items: center
+
+    &__username
+        font-weight: 600
+        margin-top: 2rem
+        margin: 0
+        color: #CCCCCC
+
+    &__real-name
+        font-weight: 600
+        font-size: 2.5rem
+        margin: 0
+        margin-bottom: 3rem
+
+.stat-blocks
+    display: flex
+
+.stat-block
+    margin-right: 4rem
+
+    &__title
+        color: #A5A5A5
+        margin: 0
+        font-size: 1rem
+        font-weight: 600
+
+    &__value
+        color: #F2F2F2
+        margin: -0.5rem 0
+        font-weight: 600
+        font-size: 4.5rem
+
+    &__description
+        margin: 0
+        font-weight: 600
+        color: #CCCCCC
+
+    &__rating-description
+        display: flex
+        font-size: 2rem
+        align-items: center
+        font-weight: 500
+
+        img
+            height: 2.5rem
+            padding-right: 0.5rem
+
+.line-graph
+    height: 25rem
+
+.win-loss-bar
+    height: 1.5rem
+    border-radius: 25px
+
+@keyframes fadeIn
+    0%
+        opacity: 0.5
+
+    100%
+        opacity: 1
